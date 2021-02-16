@@ -12,4 +12,11 @@ end
 
 def current_player(board)
   #uses the '%' to determine whose turn it is. hint: turn count % 2 determines what is printed.
+
+  if turn_count(board) % 2 == 1
+    "X"
+  elsif turn_count(board) % 2 == 0
+    "O"
+  end
+
 end
